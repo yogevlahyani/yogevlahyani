@@ -1,0 +1,217 @@
+<!--
+	*	Author: Yogev Lahyani.
+	*	yogevlahyani@gmail
+	*	All rights reserved.
+-->
+<!DOCTYPE html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="author" content="Yogev Lahyani" /> 
+	<title>Yogev Lahyani</title> 
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+	<meta name="viewport" content="width=device-width, user-scalable=yes">
+	<link rel="stylesheet" href="style.css" type="text/css" />
+	<link rel="stylesheet" href="animate.css" type="text/css" />
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/typed.js"></script>
+	<script type="text/javascript" src="js/jquery.validate.min.js"></script>
+	<script type="text/javascript" src="js/validation.js"></script>
+	<script type="text/javascript" src="js/general.js"></script>
+	<script type="text/javascript" src="js/wow.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$("#portfolio ul li p").hide();
+			
+			$("#portfolio ul li").hover(function() {
+				$(this).find("p").slideDown("fast", stop());
+			}, function() {
+				$(this).find("p").fadeOut("fast", stop());
+			});
+			mobileMenu();
+		});
+		new WOW().init();
+	</script>
+</head> 
+<body>
+	<nav class="topNav">
+		<div id="logo">
+			<a href="javascript: scrollTo('topPage');">
+				<h1>yogevlahyani.</h1>
+			</a>
+		</div>
+		<div class="menu">
+			<ul>
+				<li><a href="javascript: scrollTo('topPage');">Home</a></li>
+				<li><a href="javascript: scrollTo('about');">About</a></li>
+				<li><a href="javascript: scrollTo('professions');">Professions</a></li>
+				<li><a href="javascript: scrollTo('portfolio');">Portfolio</a></li>
+				<li><a href="javascript: scrollTo('contact');">Contact</a></li>
+			</ul>
+		</div>
+	</nav>
+	<header id="topPage">
+		<h2>Development is my PASSION!</h2>
+		<small>And PASSION Produces AMAZING Results.</small>
+		<div id="laptop" class="type-wrap">
+			<span id="typed">#</span>
+			
+			<a href="javascript: scrollTo('contact');" class="right" style="margin-top: 200px;">
+				<img src="images/contact.png" alt="" />
+			</a>
+			
+			<a href="skype:shayogev2" class="left">
+				<img src="images/skype.png" alt="" />
+			</a>
+		</div>
+	</header>
+	
+	<div id="scrollTop">
+		<a href="javascript: scrollTo('topPage');">
+			<img src="images/scrollTop.png" alt="" />
+		</a>
+	</div>
+	
+	<div class="content" id="about">
+		<h2>About Me</h2>
+		<p class="wow fadeIn" data-wow-delay="1.5s" data-wow-duration="2s">
+			<strong>“The definition of genius is taking the complex and making it simple.”</strong><br />
+			<strong>- Albert Einstein.</strong>
+		</p>
+		<p class="wow fadeIn" data-wow-delay="2s" data-wow-duration="2s">
+			I am here to make it happen. Through hard work and devotion I'll make your website simple yet extraordinary, and we all know that nowadays technology is the key to going wide.<br />
+			So let me do the hard work and develop a website based on your ideas and aspirations just a bit simpler.
+		</p>
+		<a href="https://www.facebook.com/yogevlahyani" target="_blank">
+			<img src="images/userIMG.jpg" alt="" class="wow fadeIn" data-wow-delay="0.5s" data-wow-duration="2s" />
+		</a>
+		<p class="wow fadeIn" data-wow-delay="1s" data-wow-duration="2s">
+			My name is Yogev Lahyani and I've been developing websites for over 5 years.<br />
+			I'm 18 years old, I worked at a websites company where I got a lot of experience.<br />
+			Now my goal is to create a new unique line of websites that fits to the new generation, basically the key to your website's success.
+		</p>
+		<p>
+			You can <a href="javascript: scrollTo('contact');">contact me</a> or <a href="mailto:yogevlahyani@gmail.com" title="yogevlahyani@gmail.com">mail me</a> anytime.
+		</p>
+	</div>
+	
+	<div class="content" id="professions">
+		<h2>Stuff I Do</h2>
+		<div class="profession">
+			<img src="images/webDev.png" alt="Web Development" class="wow flipInX" data-wow-delay="1s" data-wow-duration="1s" />
+			<strong>Web Development</strong>
+		</div>
+		<div class="profession">
+			<img src="images/appDev.png" alt="Applications Development" class="wow flipInX" data-wow-delay="1.5s" data-wow-duration="1s" />
+			<strong>Applications Development</strong>
+		</div>
+		<div class="profession">
+			<img src="images/graphicDesign.png" alt="Graphic Design" class="wow flipInX" data-wow-delay="2s" data-wow-duration="1s" />
+			<strong>Graphic Design</strong>
+		</div>
+	</div>
+	
+	<div class="content" id="portfolio">
+		<h2>Portfolio</h2>
+		<ul>
+			<li class="wow fadeInUp" data-wow-delay="1s" data-wow-duration="1s">
+				<a href="../yoreh-deah" title="Yoreh-Deah" target="_blank">
+					<img src="Projects/yoreh-deah/indexIMG.jpg" alt="" />
+					<p>
+						Slicing & Graphic Editing.<br />
+					</p>
+				</a>
+			</li>
+			<li class="wow rotateInUpLeft" data-wow-delay="2s" data-wow-duration="1s">
+				<a href="http://xn----1hckek1b6ct.co.il/" title="מצב הרוח" target="_blank">
+					<img src="Projects/matzav-haruah/indexIMG.jpg" alt="" />
+					<p>
+						Slicing, Graphic Editing & CMS.<br />
+					</p>
+				</a>
+			</li>
+			<li class="wow flipInY" data-wow-delay="3s" data-wow-duration="1s">
+				<a href="http://shayogev.wek.co.il/Tapabriko/" title="Tapabriko" target="_blank">
+					<img src="Projects/Tapabriko/indexIMG.jpg" alt="" />
+					<p>
+						Slicing, Graphic Editing & Mobile Responsivity.<br />
+					</p>
+				</a>
+			</li>
+			<li class="wow zoomInDown" data-wow-delay="4s" data-wow-duration="1s">
+				<a href="http://shayogev.wek.co.il/AlmogFalus" title="Almog Falus" target="_blank">
+					<img src="Projects/AlmogFalus/indexIMG.jpg" alt="" />
+					<p>
+						Slicing, Graphic Editing & Mobile Responsivity.<br />
+					</p>
+				</a>
+			</li>
+		</ul>
+	</div>
+	
+	<!--
+	<div class="content" id="contact">
+		<h2>Contact</h2>
+		<form method="post" action="#contact" id="contactForm">
+			<ul>
+				<li><input type="text" name="fullName" placeholder="Enter your Full name" /></li>
+				<li><input type="text" name="email" placeholder="Enter your Email" /></li>
+				<li><input type="text" name="phone" placeholder="Enter your Phone (Israel only)" /></li>
+				<li><input type="text" name="subject" placeholder="What is it about?" /></li>
+				<li><textarea name="message" placeholder="Enter your Email Message" rows="7"></textarea></li>
+				<li><p class='formResult'></p></li>
+			</ul>
+			<input type="submit" name="sendForm" value="Submit" />
+		</form>
+		<?php
+		/*
+			if(isset($_POST['sendForm'])){
+				$fullName = $_POST['fullName'];
+				$email = $_POST['email'];
+				$phone = $_POST['phone'];
+				$subject = $_POST['subject'];
+				$message = $_POST['message'];
+				$date = date("d/m/Y H:i");
+				if (!empty($_SERVER['HTTP_CLIENT_IP'])) {
+					$ip = $_SERVER['HTTP_CLIENT_IP'];
+				} elseif (!empty($_SERVER['HTTP_X_FORWARDED_FOR'])) {
+					$ip = $_SERVER['HTTP_X_FORWARDED_FOR'];
+				} else {
+					$ip = $_SERVER['REMOTE_ADDR'];
+				}
+				$msg = "
+Full name: {$fullName}
+
+Email: {$email}
+
+Phone: {$phone}
+
+Subject: {$subject}
+
+Message:
+{$message}
+							
+Date: {$date}
+
+Sender IP: {$ip}";
+				mail("yogevlahyani@gmail.com", $subject, $msg);
+				echo "<script type='text/javascript'>$('.formResult').text('Your message has send! I will be back to you as soon as possible.');</script>";
+			}
+			*/
+		?>
+	</div>
+	-->
+	
+	<div id="footer">
+		<ul>
+			<li><a href="javascript: scrollTo('topPage');">Home</a></li>
+			<li><a href="javascript: scrollTo('about');">About</a></li>
+			 <li><a href="javascript: scrollTo('professions');">Professions</a></li>
+			<li><a href="javascript: scrollTo('portfolio');">Portfolio</a></li>
+			<li><a href="javascript: scrollTo('contact');">Contact</a></li>
+		</ul>
+		<span>Copyrights &copy; Yogev Lahyani 2014. All Rights Reserved.</span>
+	</div>
+</body>
+</html>

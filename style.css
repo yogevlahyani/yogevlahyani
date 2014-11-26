@@ -1,0 +1,175 @@
+@charset "UTF-8";
+
+@font-face {
+	font-family: 'proximanovalight';
+	src: url('fonts/proximanovalight.eot');
+	src: local('proximanovalight'), url('fonts/proximanovalight.woff') format('woff'), url('fonts/proximanovalight.ttf') format('truetype');
+}
+
+/* Reset (start) */
+
+*
+{
+	margin: 0; padding: 0; border: 0; outline: 0;
+	vertical-align: baseline; background: transparent;
+	direction: ltr; text-decoration: none;
+	font: 100% "proximanovalight", "Arial"; text-align: center;
+	color: #fff;
+}
+
+:focus {outline: 0;}
+
+ul, ol {list-style: none; }
+form{height: auto; display: block;}
+
+a, a:visited{color: #000; font-size: 20px;}
+a:hover{color: #0675a3;}
+h2{font-size: 30px; color: #6b6b6b;}
+
+strong{font-weight: bold; color: #000;}
+.right{float: right;}
+.left{float: left;}
+.clear{ clear: both; }
+/* Reset (end) */
+/*
+**	Top Navigator
+**	Including Logo & Menu.
+*/
+.topNav{
+	position: fixed;
+	z-index: 9999;
+	top: 0;
+	background: #2c3e50;
+	width: 70%;
+	height: auto;
+	padding: 20px 15%;
+	box-shadow: 0px 0px 10px #222f3d;
+}
+.topNav #logo a h1{font-size: 30px; text-shadow: none; transition: text-shadow 0.5s; -webkit-transition: text-shadow 0.5s;}
+.topNav #logo{float: left;}
+.topNav #logo a h1:hover, .topNav .menu li a:hover{text-shadow: 0 0 20px #fff; transition: text-shadow 0.5s; -webkit-transition: text-shadow 0.5s;}
+.menu li{
+	width: 100px;
+	display: inline-table;
+	border-right: 2px dashed #fff;
+}
+.menu li:last-of-type{border: 0;}
+.menu li a{font-size: 14px; color: #fff; text-shadow: none; transition: text-shadow 0.5s; -webkit-transition: text-shadow 0.5s;}
+.menu{width: 70%; float: right; margin-top: 10px;}
+
+/*
+**	Top Page
+**	Including website introducing.
+*/
+header#topPage{
+	background: #2c3e50;
+	padding: 90px 0 2% 0;
+}
+header#topPage h2{color: #fff;}
+
+#laptop{
+	background: url('images/laptop.png') no-repeat;
+	width: 478px;
+	height: 351px;
+	margin: 20px auto;
+	padding: 40px 100px;
+}
+#laptop p{text-align: left;}
+#laptop a{width: 100px; margin-top: 180px; display: block;}
+#laptop a img{width: 100px; transition: opacity 0.5s; -webkit-transition: opacity 0.5s; opacity: 1;}
+#laptop a:hover > img{transition: opacity 0.5s; -webkit-transition: opacity 0.5s; opacity: 0.5;}
+/*
+**	Contents.
+*/
+div.content{
+	width: 100%;
+	padding: 50px 0;
+	min-height: 200px;
+}
+.content p{width: 50%; margin: 10px auto; color: #000; font-size: 16px;}
+.content:nth-of-type(2n+1){background: #eeeeee;}
+.content#about a img{width: 240px; height: auto; border: 5px solid #cccccc; -webkit-border-radius: 120px; border-radius: 120px; opacity: 1; -webkit-transition: opacity 0.5s; transition: opacity 0.5s;}
+.content#about a:hover > img{opacity: 0.7; -webkit-transition: opacity 0.5s; transition: opacity 0.5s;}.content#professions .profession {width: 25%; display: inline-block; margin-top: 20px;}.content#professions .profession strong{display: block;}
+.content#portfolio ul{width: 70%; margin: 0 auto;}
+.content#portfolio ul li{display: inline-table; width: 200px; position: relative; margin: 5px 10px; z-index: 5;}
+.content#portfolio a img{width: 100%; height: auto; border-radius: 20px;}
+.content#portfolio p{position: absolute; bottom: 4px; background: rgba(44, 62, 80, 0.8); width: 90%; height: 54%; color: #fff; margin: auto; cursor: pointer; padding: 40% 5% 5%; overflow: hidden; border-radius: 20px;}
+.content#portfolio p a{color: #fff; font-size: 14px;}
+.content#contact ul{display: table; margin: 0 auto; width: 100%;}
+.content#contact ul li{position: relative; margin: 10px 0;}
+.content#contact ul li input[type="text"], .content#contact ul li textarea{background: #fff; color: #000; padding: 5px; border-radius: 5px; border: 1px solid #cccccc; text-align: left; width: 25%;}
+.content#contact input[type="submit"]{background: #2c3e50; padding: 5px 15px; border-radius: 5px; border: 1px solid #cccccc; margin: 0 auto; cursor: pointer; opacity: 1; transition: opacity 0.5s; -webkit-transition: opacity 0.5s; opacity: 1; transition: opacity 0.5s; -webkit-transition: opacity 0.5s;}
+.content#contact input[type="submit"]:hover{ opacity: 0.8; transition: opacity 0.5s; -webkit-transition: opacity 0.5s;}
+/*
+**	Footer
+**	Including Menu & Copyrights.
+*/
+#footer ul li{
+	width: 100px;
+	display: inline-table;
+	border-right: 2px dashed #cecece;
+	margin-bottom: 20px;
+}
+#footer{margin: 20px 0;}
+#footer ul li a{font-size: 14px;}
+#footer ul li:last-of-type{border: 0;}
+#footer span{font-size: 14px; color: #000; font-weight: bold;}
+/*
+**	Responsive Improvements & Others.
+*//* Maximum width of 1000 pixels. */@media screen and (max-width: 1000px) {	.topNav #logo{width: 100%; text-align: center;}	.topNav #logo a h1{font-size: 4vw;}	.topNav .menu{width: 100%;}	.topNav{padding: 20px 5%; width: 90%;}	.menu li{width: 70px;}	.content#contact ul li input[type="text"], .content#contact ul li textarea{width: 75%;}	header#topPage{padding: 100px 0 2% 0;}	.content#professions .profession {width: 30%;}}/* Maximum width of 700 pixels. */@media screen and (max-width: 700px) {	#laptop{display: none;}}
+
+/* Maximum width of 600 pixels. */
+@media screen and (max-width: 600px) {
+	.topNav #logo a h1{font-size: 30px;}
+	.topNav #logo{width: 50%; margin-top: 12px;}
+	.menu{background: url('images/mobileMenu.png') no-repeat; width: 32px!important; height: 32px; cursor: pointer;}
+	.menu ul{position: absolute; top: 82px; right: 0; width: 100%; border-top: 1px dashed #fff;}
+	.menu li{border: none; display: none; text-align: center; background: #222f3d; width: 100%; max-width: 100%; padding: 10px 0; border-bottom: 1px dashed #fff;}
+	.menu li:hover{background: #2c3e50;}
+	.menu li a{display: block; width: 100%; height: 100%;}
+	.content p{width: 95%; font-size: 18px; text-align: justify;}		#footer ul li{display: none;}	.content#professions .profession {width: 100%; margin-top: 10%;}
+}
+.error{border: 1px solid #FF0000!important;}.valid{border: 1px solid #19A347!important;}
+label.error{border: none!important; position: absolute; margin-left: 10px; top: 0; right: auto;}
+.ipadWrap{background: url('images/ipad.png') no-repeat; width: 497px; height: 352px; margin: 0 auto;}
+
+span#typed, span.typed-cursor{font-size: 30px;}
+
+#scrollTop{position: fixed; bottom: 10px; right: 10px; z-index: 7777; display: none;}
+#scrollTop img{width: 50px; height: auto;}
+        /* code for animated blinking cursor */
+        .typed-cursor{
+            opacity: 1;
+            font-weight: 100;
+            -webkit-animation: blink 0.7s infinite;
+            -moz-animation: blink 0.7s infinite;
+            -ms-animation: blink 0.7s infinite;
+            -o-animation: blink 0.7s infinite;
+            animation: blink 0.7s infinite;
+        }
+        @-keyframes blink{
+            0% { opacity:1; }
+            50% { opacity:0; }
+            100% { opacity:1; }
+        }
+        @-webkit-keyframes blink{
+            0% { opacity:1; }
+            50% { opacity:0; }
+            100% { opacity:1; }
+        }
+        @-moz-keyframes blink{
+            0% { opacity:1; }
+            50% { opacity:0; }
+            100% { opacity:1; }
+        }
+        @-ms-keyframes blink{
+            0% { opacity:1; }
+            50% { opacity:0; }
+            100% { opacity:1; }
+        }
+        @-o-keyframes blink{
+            0% { opacity:1; }
+            50% { opacity:0; }
+            100% { opacity:1; }
+        }
+		/* END */
